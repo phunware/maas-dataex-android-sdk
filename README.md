@@ -1,16 +1,16 @@
-Data Exchange SDK [![Language](https://img.shields.io/badge/Kotlin-1.3-%234c20f0.svg)]() [![Release](https://img.shields.io/badge/Release-0.1.0-%234c20f0.svg)]()
+Data SDK [![Language](https://img.shields.io/badge/Kotlin-1.3-%234c20f0.svg)]() [![Release](https://img.shields.io/badge/Release-0.1.0-%234c20f0.svg)]()
 =====
-The `Data Exchange SDK` enables publishers/app developers to earn PhunCoin and PhunToken by incorporating the SDK into their applications and exposing their users to the PhunWallet application.
+The `Data SDK` enables publishers/app developers to earn PhunCoin by incorporating the SDK into their applications and exposing their users to the PhunWallet application.
 
-In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and PhunToken when app activity is used by brands as audiences.
+In addition to contributing users to the data SDK - developers can also send app usage events for users - and earn PhunCoin when app activity is used by brands as audiences.
 
 An easy to use dashboard in the Phunware MaaS portal (maas.phunware.com) provides a dashboard for developers to see their balances and track engagement from their users into the ecosystem.
 
 > ***<sub>note</sub>*** <br/>
->  `DataEx` currently only supports Android for  **SDK 23**+.
+>  `Data SDK` currently only supports Android for  **SDK 23**+.
 
 <a id="installation"></a>
-## Using DataEx SDK
+## Using Data SDK
 
 ### **Gradle**
 
@@ -33,9 +33,9 @@ implementation "com.phunware.crypto:dataex:0.1.0"
 ## Usage Overview
 
 ### **Initialization**
-The DataEx SDK will automatically be initialized when your application process starts.  You only need to initialize our MaaS Core SDK to proceed with using the DataEx SDK.
+The Data SDK will automatically be initialized when your application process starts.  You only need to initialize our MaaS Core SDK to proceed with using the Data SDK.
 
-The DataEx SDK relies on Phunware Core SDK to provide application authentication with the Phunware MaaS suite and provides other built in useful features such as Analytics. In the MaaS portal, retrieve your application identifier, access key, signature key to initialize the Core SDK in your Application class's onCreate with the following:
+The Data SDK relies on Phunware Core SDK to provide application authentication with the Phunware MaaS suite and provides other built in useful features such as Analytics. In the MaaS portal, retrieve your application identifier, access key, signature key to initialize the Core SDK in your Application class's onCreate with the following:
 
 ```kotlin
 // Your Application onCreate
@@ -49,9 +49,9 @@ PwCoreSession.getInstance().registerKeys(this,
 ***
 ### **Tease your users**
 
-In order for your users to claim any accrued digital assets and receive the full benefit of participating in the Data Exchange, they will have to install the PhunWallet mobile app.  We provide you a colorful platform specific widget that you can display anywhere in your app to call attention to installing the PhunWallet mobile app.
+In order for your users to claim any accrued digital assets and receive the full benefit of participating in the PhunCoin ecosystem, they will have to install the PhunWallet mobile app.  We provide you a colorful platform specific widget that you can display anywhere in your app to call attention to installing the PhunWallet mobile app.
 
-Publishers who successfully get their users to generate a Wallet in the PhunWallet mobile app will earn PhunCoin and/or Phuntoken for each unique user.
+Publishers who successfully get their users to generate a Wallet in the PhunWallet mobile app will earn PhunCoin for each unique user.
 
 
 ```xml
@@ -68,7 +68,7 @@ Publishers who successfully get their users to generate a Wallet in the PhunWall
 ```
 
 ***
-DataEx branding doesn't match your app? We gotchu.
+Data SDK branding doesn't match your app? We gotchu.
 
 
 ```xml
@@ -95,7 +95,7 @@ teaserSunshine.setOnClickListener {
 ***
 ### **Eligibility**
 
-Not all of your users will be eligible for Data Exchange (see [advertising](#advertising)).  You should check to see if the user is eligible before showing any Data Exchange branding.
+Not all of your users will be eligible for PhunCoin (see [advertising](#advertising)).  You should check to see if the user is eligible before showing any PhunCoin branding.
 
 ```kotlin
 DataEx.isEligible(object : DataEx.EligibleListener {
@@ -114,10 +114,10 @@ DataEx.isEligible(object : DataEx.EligibleListener {
 ```
 
 ***
-### **Checking the user's Data Exchange balance**
+### **Checking the user's PhunCoin balance**
 You may want to display the user's current asset balance as your user accrues digital assets across the blockchain-powered, mobile-first cryptocurrency ecosystem.
 
-When requesting an updated balance we will also return you a current DataEx branding image to display alongside the balance.
+When requesting an updated balance we will also return you a current PhunCoin branding image to display alongside the balance.
 
 ```kotlin
 DataEx.assetManager().balance(object : AssetManager.BalanceListener {
@@ -136,15 +136,15 @@ DataEx.assetManager().balance(object : AssetManager.BalanceListener {
 ## A bit on device identifiers
 
 ### Android
-DataEx relies on the device's current [Advertising ID](https://developer.android.com/training/articles/user-data-ids) through Google Play Services.
+Data SDK relies on the device's current [Advertising ID](https://developer.android.com/training/articles/user-data-ids) through Google Play Services.
 
 > The advertising ID is a user-specific, unique, resettable ID for advertising, provided by Google Play services. It gives users better controls and provides developers with a simple, standard system to continue to monetize your apps. It is an anonymous identifier for advertising purposes and enables users to reset their identifier or opt out of interest-based ads within Google Play apps.
 
 If your user resets their Advertising ID they may be required to claim a pending promotional balance in PhunWallet to reconcile any accrued balance that happened with their new Advertising ID.
 
-Additionally, if they have opted out of personalized ads they will not be eligible for Data Exchange and all Data Ex SDK features will be disabled.
+Additionally, if they have opted out of personalized ads they will not be eligible for PhunCoin and all Data SDK features will be disabled.
 
-While Data Ex SDK adheres to all of the policies outlined by Play Services, it is up to you to adhere to the (link)[policy requirements] for publishing on Google Play.
+While Data SDK adheres to all of the policies outlined by Play Services, it is up to you to adhere to the [policy requirements](https://support.google.com/googleplay/android-developer/answer/9857753) for publishing on Google Play.
 
 ***
 <a id="class"></a>
@@ -155,7 +155,7 @@ The [Reference Documentation](https://phunware.github.io/maas-dataex-android-sdk
 <a id="attribution"></a>
 ## Attribution
 
-DataEx SDK uses the following 3rd party components.
+Data SDK uses the following 3rd party components.
 
 | Component     | Version  | Description   | License  |
 | ------------- | -------  |:-------------:| -----:|
