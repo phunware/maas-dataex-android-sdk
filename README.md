@@ -1,8 +1,8 @@
 Data Exchange SDK [![Language](https://img.shields.io/badge/Kotlin-1.3-%234c20f0.svg)]() [![Release](https://img.shields.io/badge/Release-0.1.0-%234c20f0.svg)]()
 =====
-The `Data Exchange SDK` enables publishers/app developers to earn PhunCoin and Phun Token by incorporating the SDK into their applications and exposing their users to the PhunWallet application.
+The `Data Exchange SDK` enables publishers/app developers to earn PhunCoin and PhunToken by incorporating the SDK into their applications and exposing their users to the PhunWallet application.
 
-In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and Phun Token when app activity is used by brands as audiences.
+In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and PhunToken when app activity is used by brands as audiences.
 
 An easy to use dashboard in the Phunware MaaS portal (maas.phunware.com) provides a dashboard for developers to see their balances and track engagement from their users into the ecosystem.
 
@@ -51,7 +51,7 @@ PwCoreSession.getInstance().registerKeys(this,
 
 In order for your users to claim any accrued digital assets and receive the full benefit of participating in the Data Exchange, they will have to install the PhunWallet mobile app.  We provide you a colorful platform specific widget that you can display anywhere in your app to call attention to installing the PhunWallet mobile app.
 
-Publishers who successfully get their users to generate a Wallet in the PhunWallet mobile app will earn PhunCoin and/or Phun token for each unique user.
+Publishers who successfully get their users to generate a Wallet in the PhunWallet mobile app will earn PhunCoin and/or Phuntoken for each unique user.
 
 
 ```xml
