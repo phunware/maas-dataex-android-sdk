@@ -1,10 +1,6 @@
 Data Exchange SDK [![Language](https://img.shields.io/badge/Kotlin-1.3-%234c20f0.svg)]() [![Release](https://img.shields.io/badge/Release-0.1.0-%234c20f0.svg)]()
 =====
-![PhunCoin logo](https://s3-us-west-1.amazonaws.com/honeybadger.phunware.com/phuncoin.png)
-
 The `Data Exchange SDK` enables publishers/app developers to earn PhunCoin and Phun Token by incorporating the SDK into their applications and exposing their users to the PhunWallet application.
-
-Integrating the SDK is simply and easy - with a sample implementation available as part of this repo.
 
 In addition to contributing users to the data exchange - developers can also send app usage events for users - and earn PhunCoin and Phun Token when app activity is used by brands as audiences.
 
@@ -12,7 +8,6 @@ An easy to use dashboard in the Phunware MaaS portal (maas.phunware.com) provide
 
 > ***<sub>note</sub>*** <br/>
 >  `DataEx` currently only supports Android for  **SDK 23**+.
->  `Sample` should be opened with at least  **Android Studio 3.4**+.
 
 <a id="installation"></a>
 ## Using DataEx SDK
@@ -154,7 +149,7 @@ While Data Ex SDK adheres to all of the policies outlined by Play Services, it i
 ***
 <a id="class"></a>
 ## Class Reference Documentation
-The [Reference Documentation](https://phunware.github.io/maas-dataex-android-sdk/) has all of the detailed usage information including all the public methods, parameters, and convenience initializers.
+The [Reference Documentation](https://phunware.github.io/maas-dataex-android-sdk/index.html) has all of the detailed usage information including all the public methods, parameters, and convenience initializers.
 
 ***
 <a id="attribution"></a>
